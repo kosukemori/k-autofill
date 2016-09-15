@@ -31,6 +31,7 @@
         if ($($(trs[i]).find('.dateLabel > div')).text().match(/Sat|Sun/) != null) {
           continue;
         }
+        // $($(trs[i]).find('.icon-List_18')[1]).click();
         // Check an index of next dayTotalRow
         var tmp = i;
         while ($(trs[tmp]).attr("class") != null && $(trs[tmp]).attr("class").match(/dayTotalRow/) == null) {
@@ -50,6 +51,13 @@
             $($(trs[i]).find('.clockRight input')).attr('value', '12:00p');
             $($(trs[i + 1]).find('.clockLeft input')).attr('value', '1:00p');
             $($(trs[i + 1]).find('.clockRight input')).attr('value', '6:00p');
+
+            $($(trs[i]).find('.dropdown_toggle')[1]).removeClass('empty_field');
+            $($(trs[i]).find('.dropdown_toggle')[1]).attr('title', 'Regular');
+            $($($(trs[i]).find('.dropdown_toggle')[1]).find('.dropdown_toggle_text')).text('Regular');
+            $($(trs[i + 1]).find('.dropdown_toggle')[1]).removeClass('empty_field');
+            $($(trs[i + 1]).find('.dropdown_toggle')[1]).attr('title', 'Regular');
+            $($($(trs[i + 1]).find('.dropdown_toggle')[1]).find('.dropdown_toggle_text')).text('Regular');
           }
         }
       }
