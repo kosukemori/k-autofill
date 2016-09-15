@@ -63,6 +63,7 @@
       }
       if (i == trs.length) {
         clearInterval(timer);
+        alert('Autofill is finished');
       }
     }, 2000);
   });
