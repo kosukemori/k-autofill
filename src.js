@@ -27,6 +27,10 @@
         if ($(trs[i]).attr("class") == null || $(trs[i]).attr("class").match(/firstRow/) == null) {
           continue;
         }
+        // console.log($($(trs[i]).find('.dateLabel > div')).text());
+        if ($($(trs[i]).find('.dateLabel > div')).text().match(/Sat|Sun/) != null) {
+          continue;
+        }
         // Check an index of next dayTotalRow
         var tmp = i;
         while ($(trs[tmp]).attr("class") != null && $(trs[tmp]).attr("class").match(/dayTotalRow/) == null) {
