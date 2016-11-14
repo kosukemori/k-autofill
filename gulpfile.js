@@ -13,7 +13,8 @@ gulp.task('babel', function() {
 var run = require('gulp-run');
 gulp.task('bookmarkletter', function() {
   return gulp.src('dist/*.js')
-    .pipe(run('$(npm bin)/bookmarkletter'))
+    .pipe(run('$(npm bin)/bookmarkletter', {'silent': true}))
+    .pipe(run('tr -d "\n"', {'silent': true}))
     .pipe(gulp.dest('dist_bookmarklet/'));
 });
 

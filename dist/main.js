@@ -1,3 +1,5 @@
+function _asyncToGenerator(fn) { return function () { var gen = fn.apply(this, arguments); return new Promise(function (resolve, reject) { function step(key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { return Promise.resolve(value).then(function (value) { step("next", value); }, function (err) { step("throw", err); }); } } return step("next"); }); }; }
+
 (function (f, src) {
   let s = src;
   s = document.createElement('script');
@@ -6,15 +8,13 @@
     f(jQuery.noConflict(true));
   };
   document.body.appendChild(s);
-}(function ($) {
-  function sleep(ms) {
-    return new Promise(resolve => setTimeout(resolve, ms));
-  }
-  async function main() {
-    // 1. Add rows -> 2. Fill columns -> 3. 
+})(function ($) {
+  let main = (() => {
+    var _ref = _asyncToGenerator(function* () {
+      // 1. Add rows -> 2. Fill columns -> 3. 
 
-    // Add rows
-    //while (true) { 
+      // Add rows
+      //while (true) { 
       const columns = $('table.reportTable > tbody > tr', top.frames['ADMIN_CENTER'].document.body);
       let i = 0;
       let arr = []; // Use only last loop's one
@@ -38,8 +38,18 @@
         }
       }
       */
-    //}
+      //}
+    });
+
+    return function main() {
+      return _ref.apply(this, arguments);
+    };
+  })();
+
+  function sleep(ms) {
+    return new Promise(resolve => setTimeout(resolve, ms));
   }
+
   main();
   return this;
 
@@ -117,4 +127,4 @@
     add_row();
   }, 2200);
   */
-}));
+});
