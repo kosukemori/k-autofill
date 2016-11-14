@@ -7,16 +7,39 @@ Bookmarklet to autofill a website.
 - This bookmarklet fill the rows which are not edited manually with "9:00-12:00, 13:00-18:00, Regular(PAY CATEGORY)". 
 - This bookmarkler can't fill a timesheet with "Overtime(PAY CATEGORY)"
 
-## Set up
+## For Users
+### Set up a bookmarklet (in general)
 1. Create any bookmark
 2. Edit the bookmark. Copy and paste from "bookmarklet.txt" to a URL of the bookmark
 3. If you want, edit a name of the bookmark
 
-## How to use
+### How to use
 Open the timesheet page, and click the bookmark which you edited  
 Please start this bookmarklet after open the timesheet  
 If it is finished, a dialog is appear  
 
-## Caution
+### Caution
 This bookmarklet is created for private  
 I am not responsible for any loss, damages, troubles when you use this bookmarklet  
+
+## Contributing
+### Set up a develop-environment (Mac)
+`brew install nodebrew`
+`nodebrew install v6.9.1`
+`nodebrew use v6.9.1`
+`cd k-autofill`
+`npm install`
+### Work-flow
+Edit src/main.js
+Check Code: `npm run lint`
+Build: `npm run build`
+Final output of a bookmarklet may be created in bookmarklet/main-bookmarklet.js
+Or, Watching with `npm run watch` and editing src/main.js
+### Others
+npm: 3.10.8
+node: v6.9.1
+Clean: `npm run clean`
+Translating order: source file(src) -> babelled file(lib) -> webpacked file(dist) -> bookmarkletted file(bookmarklet)
+
+## TODO
+Write main.js
