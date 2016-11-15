@@ -1,0 +1,45 @@
+{
+  "name": "k-autofill",
+  "version": "1.0.0",
+  "description": "K-AUTOFILL ====",
+  "main": "main/src.js",
+  "scripts": {
+    "leaves": "npm ls --depth=0",
+    "bookmarkletter": "bookmarkletter",
+    "build": "gulp build",
+    "watch": "gulp watch",
+    "test": "gulp test",
+    "lint": "gulp lint",
+    "clean": "gulp clean",
+    "pre-commit": "gulp pre-commit"
+  },
+  "pre-commit": [
+    "lint"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kosukemori/k-autofill.git"
+  },
+  "author": "kosmori",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kosukemori/k-autofill/issues"
+  },
+  "homepage": "https://github.com/kosukemori/k-autofill#readme",
+  "devDependencies": {
+    "babel-plugin-transform-async-to-generator": "^6.16.0",
+    "bookmarkletter": "^0.1.1",
+    "del": "^2.2.2",
+    "eslint-config-airbnb": "^13.0.0",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-jsx-a11y": "^2.2.3",
+    "eslint-plugin-react": "^6.6.0",
+    "gulp": "^3.9.1",
+    "gulp-babel": "^6.1.2",
+    "gulp-eslint": "^3.0.1",
+    "gulp-run": "^1.7.1",
+    "gulp-watch": "^4.3.10",
+    "pre-commit": "^1.1.3",
+    "run-sequence": "^1.2.2"
+  }
+}
