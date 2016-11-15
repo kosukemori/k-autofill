@@ -4,17 +4,17 @@ K-AUTOFILL
 Bookmarklet to autofill a website.
 
 ## Features
-- This bookmarklet fill the rows with "9:00-12:00, 13:00-18:00, Regular(PAY CATEGORY)"  
-- This bookmarkler can't fill a timesheet with "Overtime(PAY CATEGORY)"  
+- This bookmarklet fill the rows with "9:00-12:00, 13:00-18:00, Regular(PAY CATEGORY)".  
+- This bookmarkler can't fill a timesheet with "Overtime(PAY CATEGORY)".  
 
 ## For Users
 ### Set up a bookmarklet (in general) and how to use
 0. **Please update your browser for latest version**  
-1. Create any bookmark  
-2. Edit the bookmark. Copy and paste from 'dist_bookmarklet/*.js' to a URL of the bookmark  
-3. If you want, edit a name of the bookmark  
-4. **After open a current timesheet page**, click the bookmark which you edited    
-5. If it is finished, a dialog is appear  
+1. Create any bookmark.  
+2. Edit the bookmark. Copy and paste from 'dist_bookmarklet/*.js' to a URL of the bookmark.  
+3. If you want, edit a name of the bookmark.  
+4. **After open a current timesheet page**, click the bookmark which you edited.   
+5. If it is finished, a dialog is appear.  
 
 ### Contents of 'dist_bookmarklet/*.js'  
 - 'dist_bookmarklet/main.js': Main bookmarklet to autofill  
@@ -22,8 +22,8 @@ Bookmarklet to autofill a website.
 - ('dist_bookmarklet/savingtimeNov.js':Enter ST and DST for Daylight savings time. I think it's no meaning) 
 
 ## Caution
-This bookmarklet is created for private  
-I am not responsible for any loss, damages, troubles when you use this bookmarklet  
+This bookmarklet is created for private.  
+I am not responsible for any loss, damages, troubles when you use this bookmarklet.  
 And please forget about Internet Explorer.
 
 ## Contributing
