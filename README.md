@@ -9,15 +9,12 @@ Bookmarklet to autofill a website.
 
 ## For Users
 ### Set up a bookmarklet (in general) and how to use
-**Please update your browser for latest version**  
+0. **Please update your browser for latest version**  
 1. Create any bookmark  
 2. Edit the bookmark. Copy and paste from 'dist_bookmarklet/*.js' to a URL of the bookmark  
 3. If you want, edit a name of the bookmark  
-4. Open a current timesheet page, and click the bookmark which you edited    
-**Please start this bookmarklet after open a current timesheet**  
+4. **After open a current timesheet page**, click the bookmark which you edited    
 5. If it is finished, a dialog is appear  
-  
-(Please forget about Internet Explorer)
 
 ### Contents of 'dist_bookmarklet/*.js'  
 - 'dist_bookmarklet/main.js': Main bookmarklet to autofill  
@@ -29,6 +26,7 @@ Bookmarklet to autofill a website.
 ### Caution
 This bookmarklet is created for private  
 I am not responsible for any loss, damages, troubles when you use this bookmarklet  
+And please forget about Internet Explorer.
 
 ## Contributing
 ### Set up a develop-environment (Mac)
