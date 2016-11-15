@@ -4,7 +4,7 @@ K-AUTOFILL
 Bookmarklet to autofill a website.
 
 ## Features
-- This bookmarklet fill the rows which are not edited manually with "9:00-12:00, 13:00-18:00, Regular(PAY CATEGORY)"  
+- This bookmarklet fill the rows with "9:00-12:00, 13:00-18:00, Regular(PAY CATEGORY)"  
 - This bookmarkler can't fill a timesheet with "Overtime(PAY CATEGORY)"  
 
 ## For Users
