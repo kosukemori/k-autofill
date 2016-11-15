@@ -15,8 +15,9 @@ Bookmarklet to autofill a website.
 4. Open a current timesheet page, and click the bookmark which you edited    
 **Please start this bookmarklet after open a current timesheet**  
 5. If it is finished, a dialog is appear  
+  
 If this bookmarlet is not work, your browser don't prepare the latest ES6  
-**Please use latest version browser**
+**Please use latest version browser**  
 (And I don't deal with IE. Please forget about him)
 
 ### Contents of 'dist_bookmarklet/*.js'  
