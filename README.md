@@ -27,7 +27,7 @@ I am not responsible for any loss, damages, troubles when you use this bookmarkl
 `brew install nodebrew`  
 `nodebrew install v6.9.1`  
 `nodebrew use v6.9.1`  
-git clone  
+Fork, clone and checkout your repo  
 `cd k-autofill`  
 `npm install`  
 ### Work-flow
