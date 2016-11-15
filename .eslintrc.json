@@ -7,6 +7,8 @@
     ],
     "globals": {
         "document": true,
+        "top": true,
+        "alert": true,
         "jQuery": true
     }
 }
