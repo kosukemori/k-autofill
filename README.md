@@ -9,7 +9,7 @@ Bookmarklet to autofill a website.
 
 ## For Users
 ### Set up a bookmarklet (in general) and how to use
-0. **Please update your browser for latest version**  
+0. **Please update your browser for latest version**.  
 1. Create any bookmark.  
 2. Edit the bookmark. Copy and paste from 'dist_bookmarklet/*.js' to a URL of the bookmark.  
 3. If you want, edit a name of the bookmark.  
