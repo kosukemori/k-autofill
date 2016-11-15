@@ -7,6 +7,11 @@ Bookmarklet to autofill a website.
 - This bookmarklet fill the rows which are not edited manually with "9:00-12:00, 13:00-18:00, Regular(PAY CATEGORY)"  
 - This bookmarkler can't fill a timesheet with "Overtime(PAY CATEGORY)"  
 
+## Contents
+'dist_bookmarklet/main.js': Main bookmarklet to autofill  
+('dist_bookmarklet/current-timesheet.js': Bookmarklet to jump current timesheet just after login)  
+('dist_bookmarklet/savingtimeNov.js':Bookmarklet to enter ST and DST for Daylight savings time. But I think it is no meaning) 
+
 ## For Users
 ### Set up a bookmarklet (in general)
 1. Create any bookmark  
