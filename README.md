@@ -7,21 +7,24 @@ Bookmarklet to autofill a website.
 - This bookmarklet fill the rows which are not edited manually with "9:00-12:00, 13:00-18:00, Regular(PAY CATEGORY)"  
 - This bookmarkler can't fill a timesheet with "Overtime(PAY CATEGORY)"  
 
-## Contents
-'dist_bookmarklet/main.js': Main bookmarklet to autofill  
-('dist_bookmarklet/current-timesheet.js': Bookmarklet to jump current timesheet just after login)  
-('dist_bookmarklet/savingtimeNov.js':Bookmarklet to enter ST and DST for Daylight savings time. But I think it is no meaning) 
-
 ## For Users
-### Set up a bookmarklet (in general)
+### Set up a bookmarklet (in general) and how to use
 1. Create any bookmark  
-2. Edit the bookmark. Copy and paste from 'dist_bookmarklet/*js' to a URL of the bookmark  
+2. Edit the bookmark. Copy and paste from 'dist_bookmarklet/*.js' to a URL of the bookmark  
 3. If you want, edit a name of the bookmark  
+4. Open a current timesheet page, and click the bookmark which you edited    
+**Please start this bookmarklet after open a current timesheet**  
+5. If it is finished, a dialog is appear  
+If this bookmarlet is not work, your browser don't prepare the latest ES6  
+**Please use latest version browser**
+(And I don't deal with IE. Please forget about him)
+
+### Contents of 'dist_bookmarklet/*.js'  
+- 'dist_bookmarklet/main.js': Main bookmarklet to autofill  
+- ('dist_bookmarklet/current-timesheet.js': Jump current timesheet just after login)  
+- ('dist_bookmarklet/savingtimeNov.js':Enter ST and DST for Daylight savings time. I think it's no meaning) 
 
 ### How to use
-Open the timesheet page, and click the bookmark which you edited    
-Please start this bookmarklet after open the timesheet  
-If it is finished, a dialog is appear  
 
 ### Caution
 This bookmarklet is created for private  
