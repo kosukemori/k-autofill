@@ -9,6 +9,7 @@ Bookmarklet to autofill a website.
 
 ## For Users
 ### Set up a bookmarklet (in general) and how to use
+**Please update your browser for latest version**  
 1. Create any bookmark  
 2. Edit the bookmark. Copy and paste from 'dist_bookmarklet/*.js' to a URL of the bookmark  
 3. If you want, edit a name of the bookmark  
@@ -16,9 +17,7 @@ Bookmarklet to autofill a website.
 **Please start this bookmarklet after open a current timesheet**  
 5. If it is finished, a dialog is appear  
   
-If this bookmarlet is not work, your browser don't prepare the latest ES6  
-**Please use latest version browser**  
-(And I don't deal with IE. Please forget about him)
+(Please forget about Internet Explorer)
 
 ### Contents of 'dist_bookmarklet/*.js'  
 - 'dist_bookmarklet/main.js': Main bookmarklet to autofill  
