@@ -18,8 +18,9 @@ Bookmarklet to autofill a website.
 
 ### Contents of 'dist_bookmarklet/*.js'  
 - 'dist_bookmarklet/main.js': Main bookmarklet to autofill  
-- ('dist_bookmarklet/current-timesheet.js': Jump current timesheet just after login)  
-- ('dist_bookmarklet/savingtimeNov.js':Enter ST and DST for Daylight savings time. I think it's no meaning) 
+- 'dist_bookmarklet/current-timesheet.js': Jump current timesheet after login  
+- ~~'dist_bookmarklet/savingtimeNov.js':Enter ST and DST for Daylight savings time. I think it's no meaning~~
+=> Don't worry about daylight saveing times. We don't need do anything.  
 
 ## Caution
 This bookmarklet is created for private.  
