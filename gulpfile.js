@@ -3,6 +3,8 @@ gulp.task('default', function() {
   console.log('Howdy!!');
 });
 
+var run = require('gulp-run');
+
 var babel = require('gulp-babel');
 gulp.task('babel', function() {
   return gulp.src('src/*.js')
@@ -10,7 +12,6 @@ gulp.task('babel', function() {
     .pipe(gulp.dest('dist/'));
 });
 
-var run = require('gulp-run');
 gulp.task('bookmarkletter', function() {
   return gulp.src('dist/*.js')
     .pipe(run('$(npm bin)/bookmarkletter', {'silent': true}))
@@ -18,9 +19,13 @@ gulp.task('bookmarkletter', function() {
     .pipe(gulp.dest('bookmarklet/'));
 });
 
+gulp.task('generate-index', function() {
+  return run('./generate-index').exec();
+});
+
 var runS = require('run-sequence');
 gulp.task('build', ['clean'], function(cb) {
-  runS('babel', 'bookmarkletter', cb);
+  runS('babel', 'bookmarkletter', 'generate-index', cb);
 });
 
 var watch = require('gulp-watch');

@@ -1,0 +1,17 @@
+#!/usr/bin/env python3
+import sys
+
+str = ''
+with open('bookmarklet/main.js') as f:
+  for line in f:
+    str += '<a href=\'' + line + '\'>Autofill</a>'
+
+str += '\n<br>\n'
+
+with open('bookmarklet/current-timesheet.js') as f:
+  for line in f:
+    str += '<a href=\'' + line + '\'>Jump to a current timesheet</a>'
+
+
+with open('index.html', 'w') as f:
+  f.write(str);
