@@ -17,9 +17,10 @@ Bookmarklet to autofill a website.
 5. If it is finished, a dialog is appear.  
 
 ### Contents of 'bookmarklet/*.js'  
-- 'bookmarklet/main.js': Main bookmarklet to autofill  
-- ('bookmarklet/current-timesheet.js': Jump current timesheet just after login)  
-- ('bookmarklet/savingtimeNov.js':Enter ST and DST for Daylight savings time. I think it's no meaning) 
+- 'bookmarklet/main.js': Main bookmarklet to autofill.  
+- 'bookmarklet/current-timesheet.js': Jump current timesheet after login.  
+- ~~'bookmarklet/savingtimeNov.js':Enter ST and DST for Daylight savings time. I think it's no meaning~~  
+=> Don't worry about daylight saving times. We don't need do anything.  
 
 ## Caution
 This bookmarklet is created for private.  
