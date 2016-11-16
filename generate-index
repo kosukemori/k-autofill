@@ -7,7 +7,7 @@ with open('bookmarklet/main.js') as f:
     # line = bytes(line, 'utf-8').decode("unicode_escape")
     str += '<a href="' + line + '">Autofill</a>'
 
-str += '\n<br>\n'
+str += '\n<br>\n<br>\n'
 
 with open('bookmarklet/current-timesheet.js') as f:
   for line in f:

@@ -8,19 +8,18 @@ Bookmarklet to autofill a website.
 - This bookmarkler can't fill a timesheet with "Overtime(PAY CATEGORY)".  
 
 ## For Users
-### Set up a bookmarklet (in general) and how to use
-0. **Please update your browser for latest version**.  
-1. Create any bookmark.  
-2. Edit the bookmark. Copy and paste from 'bookmarklet/*.js' to a URL of the bookmark.  
-3. If you want, edit a name of the bookmark.  
-4. **After open a current timesheet page**, click the bookmark which you edited.   
-5. If it is finished, a dialog is appear.  
+### Set up a bookmarklet
+1. **Please update your browser for latest version**.  
+2. Open https://kosukemori.github.io/k-autofill/.
+3. Drag and drop a link of them to your bookmark bar.
 
-### Contents of 'bookmarklet/*.js'  
-- 'bookmarklet/main.js': Main bookmarklet to autofill.  
-- 'bookmarklet/current-timesheet.js': Jump current timesheet after login.  
-- ~~'bookmarklet/savingtimeNov.js':Enter ST and DST for Daylight savings time. I think it's no meaning~~  
-=> Don't worry about daylight saving times. We don't need do anything.  
+### How to use
+## Autofill
+1. **After open a current timesheet page**, click the bookmark. Done!  
+2. If it is finished, a dialog is appear.  
+
+## Jump to a current timesheet
+1. After login, click the bookmark. Done!  
 
 ## Caution
 This bookmarklet is created for private.  
