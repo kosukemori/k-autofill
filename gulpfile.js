@@ -15,7 +15,7 @@ gulp.task('bookmarkletter', function() {
   return gulp.src('dist/*.js')
     .pipe(run('$(npm bin)/bookmarkletter', {'silent': true}))
     .pipe(run('tr -d "\n"', {'silent': true}))
-    .pipe(gulp.dest('dist_bookmarklet/'));
+    .pipe(gulp.dest('bookmarklet/'));
 });
 
 var runS = require('run-sequence');
@@ -52,7 +52,7 @@ gulp.task('lint', function() {
 
 var del = require('del');
 gulp.task('clean', function() {
-  return del(['dist*/*.js']);
+  return del(['dist/*.js', 'bookmarklet/*.js']);
 });
 
 gulp.task('test', function() {

@@ -11,15 +11,15 @@ Bookmarklet to autofill a website.
 ### Set up a bookmarklet (in general) and how to use
 0. **Please update your browser for latest version**.  
 1. Create any bookmark.  
-2. Edit the bookmark. Copy and paste from 'dist_bookmarklet/*.js' to a URL of the bookmark.  
+2. Edit the bookmark. Copy and paste from 'bookmarklet/*.js' to a URL of the bookmark.  
 3. If you want, edit a name of the bookmark.  
 4. **After open a current timesheet page**, click the bookmark which you edited.   
 5. If it is finished, a dialog is appear.  
 
-### Contents of 'dist_bookmarklet/*.js'  
-- 'dist_bookmarklet/main.js': Main bookmarklet to autofill  
-- ('dist_bookmarklet/current-timesheet.js': Jump current timesheet just after login)  
-- ('dist_bookmarklet/savingtimeNov.js':Enter ST and DST for Daylight savings time. I think it's no meaning) 
+### Contents of 'bookmarklet/*.js'  
+- 'bookmarklet/main.js': Main bookmarklet to autofill  
+- ('bookmarklet/current-timesheet.js': Jump current timesheet just after login)  
+- ('bookmarklet/savingtimeNov.js':Enter ST and DST for Daylight savings time. I think it's no meaning) 
 
 ## Caution
 This bookmarklet is created for private.  
@@ -38,10 +38,10 @@ Fork, clone and checkout your repo
 Edit src/main.js  
 Check Code: `npm run lint`  
 Build: `npm run build`  
-Final output of a bookmarklet may be created in dist_bookmarklet/*.js
+Final output of a bookmarklet may be created in 'bookmarklet/*.js'
 Or, Watching with `npm run watch` and editing src/main.js  
 ### Others
 npm: 3.10.8  
 node: v6.9.1  
 Clean: `npm run clean`  
-Translating order: source file(src) -> babelled file(dist) -> bookmarkletted file(dist_bookmarklet)
+Translating order: source file(src) -> babelled file(dist) -> bookmarkletted file(bookmarklet)
