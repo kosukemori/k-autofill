@@ -1,30 +1,35 @@
 K-AUTOFILL
 ====
 
-Bookmarklet to autofill a website.
-
-## Features
-- This bookmarklet fill the rows with "9:00-12:00, 13:00-18:00, Regular(PAY CATEGORY)".  
-- This bookmarkler can't fill a timesheet with "Overtime(PAY CATEGORY)".  
+Bookmarklet to autofill a website.  
 
 ## For Users
 ### Set up a bookmarklet
-1. **Please update your browser for latest version**.  
-2. Open https://kosukemori.github.io/k-autofill/.
-3. Drag and drop a link of them to your bookmark bar.
+1. Open https://kosukemori.github.io/k-autofill/.  
+2. From the page, drag and drop one of links to your bookmarks bar.  
 
 ### How to use
 #### Autofill
-1. **After open a current timesheet page**, click the bookmark. Done!  
-2. If it is finished, a dialog is appear.  
+1. **Open a current timesheet page**  
+2. Click the bookmark, and wait until a popup is appeared.  
 
 #### Jump to a current timesheet
-1. After login, click the bookmark. Done!  
+1. Login.  
+2. Click the bookmark.  
 
-## Caution
+### Caution
 This bookmarklet is created for private.  
 I am not responsible for any loss, damages, troubles when you use this bookmarklet.  
-And please forget about Internet Explorer.
+
+### Others
+- **Please update your browser for latest version**.  
+- Columns are setted as '9:00-12:00', '13:00-18:00, 'Regular'.  
+- This bookmarklert don't deal with overtime and PTO.
+- Please forget about Internet Explorer.  
+
+<br />
+<br />
+<br />
 
 ## Contributing
 ### Set up a develop-environment (Mac)
