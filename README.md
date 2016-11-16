@@ -14,11 +14,11 @@ Bookmarklet to autofill a website.
 3. Drag and drop a link of them to your bookmark bar.
 
 ### How to use
-## Autofill
+#### Autofill
 1. **After open a current timesheet page**, click the bookmark. Done!  
 2. If it is finished, a dialog is appear.  
 
-## Jump to a current timesheet
+#### Jump to a current timesheet
 1. After login, click the bookmark. Done!  
 
 ## Caution
