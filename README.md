@@ -33,20 +33,21 @@ I am not responsible for any loss, damages, troubles when you use this bookmarkl
 
 ## Contributing
 ### Set up a develop-environment (Mac)
-`brew install nodebrew`  
-`nodebrew install v6.9.1`  
-`nodebrew use v6.9.1`  
+`$ brew install nodebrew`  
+`$ nodebrew install v6.9.1`  
+`$ nodebrew use v6.9.1`  
 Fork, clone and checkout your repo  
-`cd k-autofill`  
-`npm install`  
-### Work-flow
-Edit src/main.js  
-Check Code: `npm run lint`  
+`$ cd k-autofill`  
+`$ npm install`  
+### Edit and build
+Edit `src/*.js`  
+(main.js: Autofill, current-timesheet.js: Jump to a current timesheet)  
 Build: `npm run build`  
-Final output of a bookmarklet may be created in 'bookmarklet/*.js'
-Or, Watching with `npm run watch` and editing src/main.js  
+(index.html is automatically generated, so please check it as like as https://'username'.github.io/k-autofill/)  
 ### Others
 npm: 3.10.8  
 node: v6.9.1  
-Clean: `npm run clean`  
-Translating order: source file(src) -> babelled file(dist) -> bookmarkletted file(bookmarklet)
+Clean command: `npm run clean`  
+Check Code command: `npm run lint`  
+Watch command: `npm run watch`  
+You can use async and await because babel translate it to ES6 code.  
