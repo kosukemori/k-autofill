@@ -12,7 +12,6 @@
   }
   async function main() {
     try {
-      // const $a = $('#TopMenu_HM_Menu1', top.frames[0].document.body);
       const $a = $('a:contains("My Account")', top.frames[0].document.body);
       $a.click();
     } catch (e) { console.log(e); }
@@ -24,8 +23,6 @@
     await sleep(500);
     try {
       const $c = $('span:contains("My Current Timesheet")', top.frames[1].document.body);
-      // const $c = $('#HM_Item1_12_1 .itemText', top.frames[1].document.body);
-      console.log($c);
       $c.click();
     } catch (e) { console.log(e); }
   }

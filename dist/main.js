@@ -21,7 +21,8 @@ function _asyncToGenerator(fn) { return function () { var gen = fn.apply(this, a
         let i = 0;
         for (; i < $firstRows.length; i += 1) {
           const day = $($firstRows[i]).find('.dateLabel > div').text();
-          if (!day.match(/Sat|Sun/)) {
+          const $holiday = $('span:contains("Holiday")', $firstRows[i]);
+          if (!day.match(/Sat|Sun/) && $holiday.length == 0) {
             const $iconPlus = $($firstRows[i]).find('.icon-plus_circle_16');
             if ($iconPlus.length > 0) {
               $iconPlus.click();
@@ -30,7 +31,7 @@ function _asyncToGenerator(fn) { return function () { var gen = fn.apply(this, a
             }
           }
         }
-        if (!(i < $firstRows.length)) {
+        if ($firstRows.length <= i) {
           break; // When adding row is finished
         }
       }
@@ -42,7 +43,8 @@ function _asyncToGenerator(fn) { return function () { var gen = fn.apply(this, a
       const $firstRows = $('table.reportTable > tbody > .firstRow', bodyCenter);
       for (let i = 0; i < $firstRows.length; i += 1) {
         const day = $($firstRows[i]).find('.dateLabel > div').text();
-        if (!day.match(/Sat|Sun/)) {
+        const $holiday = $('span:contains("Holiday")', $firstRows[i]);
+        if (!day.match(/Sat|Sun/) && $holiday.length == 0) {
           // Fill Rows
           $($firstRows[i]).find('.clockLeft input').attr('value', '9:00a');
           $($firstRows[i]).find('.clockRight input').attr('value', '12:00p');

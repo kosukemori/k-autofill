@@ -12,7 +12,6 @@ function _asyncToGenerator(fn) { return function () { var gen = fn.apply(this, a
   let main = (() => {
     var _ref = _asyncToGenerator(function* () {
       try {
-        // const $a = $('#TopMenu_HM_Menu1', top.frames[0].document.body);
         const $a = $('a:contains("My Account")', top.frames[0].document.body);
         $a.click();
       } catch (e) {
@@ -28,8 +27,6 @@ function _asyncToGenerator(fn) { return function () { var gen = fn.apply(this, a
       yield sleep(500);
       try {
         const $c = $('span:contains("My Current Timesheet")', top.frames[1].document.body);
-        // const $c = $('#HM_Item1_12_1 .itemText', top.frames[1].document.body);
-        console.log($c);
         $c.click();
       } catch (e) {
         console.log(e);
