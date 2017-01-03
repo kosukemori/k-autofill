@@ -14,17 +14,19 @@
     try {
       const $a = $('#TopMenu_HM_Menu1', top.frames[0].document.body);
       $a.click();
-    } catch (e) { /* Do nothing */ }
+    } catch (e) { console.log(e); }
     await sleep(500);
     try {
-      const $b = $('#HM_Item1_12', top.frames[1].document.body);
-      $b.click();
-    } catch (e) { /* Do nothing */ }
+      // const $b = $('#HM_Item1_12', top.frames[1].document.body);
+      const $b = $('span:contains("My Timesheet")', top.frames[1].document.body);
+      console.log($b);
+      // $b.click();
+    } catch (e) { console.log(e); }
     await sleep(500);
     try {
-      const $c = $('#HM_Item1_12_1 .itemText', top.frames[1].document.body);
-      $c.click();
-    } catch (e) { /* Do nothing */ }
+      // const $c = $('#HM_Item1_12_1 .itemText', top.frames[1].document.body);
+      // $c.click();
+    } catch (e) { console.log(e); }
   }
   main();
   return this;

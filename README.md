@@ -1,48 +1,53 @@
 K-AUTOFILL
 ====
 
-Bookmarklet to autofill a website.
-
-## Features
-- This bookmarklet fill the rows which are not edited manually with "9:00-12:00, 13:00-18:00, Regular(PAY CATEGORY)"  
-- This bookmarkler can't fill a timesheet with "Overtime(PAY CATEGORY)"  
-
-## Contents
-'dist_bookmarklet/main.js': Main bookmarklet to autofill  
-('dist_bookmarklet/current-timesheet.js': Bookmarklet to jump current timesheet just after login)  
-('dist_bookmarklet/savingtimeNov.js':Bookmarklet to enter ST and DST for Daylight savings time. But I think it is no meaning) 
+Bookmarklet to autofill a website.  
 
 ## For Users
-### Set up a bookmarklet (in general)
-1. Create any bookmark  
-2. Edit the bookmark. Copy and paste from 'dist_bookmarklet/*js' to a URL of the bookmark  
-3. If you want, edit a name of the bookmark  
+### Set up a bookmarklet
+1. Open https://kosmori.github.io/k-autofill/.  
+2. From the page, drag and drop one of links to your bookmarks bar.  
 
 ### How to use
-Open the timesheet page, and click the bookmark which you edited    
-Please start this bookmarklet after open the timesheet  
-If it is finished, a dialog is appear  
+#### Autofill
+1. **Open a current timesheet page**  
+2. Click the bookmark, and wait until a popup is appeared.  
+
+#### Jump to a current timesheet
+1. Login.  
+2. Click the bookmark.  
 
 ### Caution
-This bookmarklet is created for private  
-I am not responsible for any loss, damages, troubles when you use this bookmarklet  
+This bookmarklet is created for private.  
+I am not responsible for any loss, damages, troubles when you use this bookmarklet.  
+
+### Others
+- **Please update your browser for latest version**.  
+- Columns are setted as '9:00-12:00', '13:00-18:00, 'Regular'.  
+- This bookmarklert don't deal with overtime and PTO.
+- Please forget about Internet Explorer.  
+
+<br />
+<br />
+<br />
 
 ## Contributing
 ### Set up a develop-environment (Mac)
-`brew install nodebrew`  
-`nodebrew install v6.9.1`  
-`nodebrew use v6.9.1`  
+`$ brew install nodebrew`  
+`$ nodebrew install v6.9.1`  
+`$ nodebrew use v6.9.1`  
 Fork, clone and checkout your repo  
-`cd k-autofill`  
-`npm install`  
-### Work-flow
-Edit src/main.js  
-Check Code: `npm run lint`  
+`$ cd k-autofill`  
+`$ npm install`  
+### Edit and build
+Edit `src/*.js`  
+(main.js: Autofill, current-timesheet.js: Jump to a current timesheet)  
 Build: `npm run build`  
-Final output of a bookmarklet may be created in dist_bookmarklet/*.js
-Or, Watching with `npm run watch` and editing src/main.js  
+(index.html is automatically generated, so please check it as like as https://'username'.github.io/k-autofill/)  
 ### Others
 npm: 3.10.8  
 node: v6.9.1  
-Clean: `npm run clean`  
-Translating order: source file(src) -> babelled file(dist) -> bookmarkletted file(dist_bookmarklet)
+Clean command: `npm run clean`  
+Check Code command: `npm run lint`  
+Watch command: `npm run watch`  
+You can use async and await because babel translate it to ES6 code.  

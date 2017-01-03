@@ -3,6 +3,8 @@ gulp.task('default', function() {
   console.log('Howdy!!');
 });
 
+var run = require('gulp-run');
+
 var babel = require('gulp-babel');
 gulp.task('babel', function() {
   return gulp.src('src/*.js')
@@ -10,17 +12,20 @@ gulp.task('babel', function() {
     .pipe(gulp.dest('dist/'));
 });
 
-var run = require('gulp-run');
 gulp.task('bookmarkletter', function() {
   return gulp.src('dist/*.js')
     .pipe(run('$(npm bin)/bookmarkletter', {'silent': true}))
     .pipe(run('tr -d "\n"', {'silent': true}))
-    .pipe(gulp.dest('dist_bookmarklet/'));
+    .pipe(gulp.dest('bookmarklet/'));
+});
+
+gulp.task('generate-index', function() {
+  return run('./generate-index').exec();
 });
 
 var runS = require('run-sequence');
 gulp.task('build', ['clean'], function(cb) {
-  runS('babel', 'bookmarkletter', cb);
+  runS('babel', 'bookmarkletter', 'generate-index', cb);
 });
 
 var watch = require('gulp-watch');
@@ -52,7 +57,7 @@ gulp.task('lint', function() {
 
 var del = require('del');
 gulp.task('clean', function() {
-  return del(['dist*/*.js']);
+  return del(['dist/*.js', 'bookmarklet/*.js']);
 });
 
 gulp.task('test', function() {
