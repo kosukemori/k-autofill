@@ -18,6 +18,7 @@
     await sleep(500);
     try {
       // const $b = $('#HM_Item1_12', top.frames[1].document.body);
+      console.log(top.frames[1].document.body);
       const $b = $('span:contains("My Timesheet")', top.frames[1].document.body);
       console.log($b);
       // $b.click();
