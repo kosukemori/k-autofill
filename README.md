@@ -5,7 +5,7 @@ Bookmarklet to autofill a website.
 
 ## For Users
 ### Set up a bookmarklet
-1. Open https://kosmori.github.io/k-autofill/.  
+1. Open https://kosukemori.github.io/k-autofill/.  
 2. From the page, drag and drop one of links to your bookmarks bar.  
 
 ### How to use
