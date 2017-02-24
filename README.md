@@ -33,12 +33,16 @@ I am not responsible for any loss, damages, troubles when you use this bookmarkl
 
 ## Contributing
 ### Set up a develop-environment (Mac)
-`$ brew install nodebrew`  
-`$ nodebrew install v6.9.1`  
-`$ nodebrew use v6.9.1`  
-Fork, clone and checkout your repo  
-`$ cd k-autofill`  
-`$ npm install`  
+```shell
+brew install nodebrew
+nodebrew install v6.9.1
+nodebrew use v6.9.1
+```
+Fork, clone and checkout your repo
+```shell
+cd k-autofill
+npm install
+```
 ### Edit and build
 Edit `src/*.js`  
 (main.js: Autofill, current-timesheet.js: Jump to a current timesheet)  
