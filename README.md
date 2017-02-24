@@ -5,31 +5,28 @@ Bookmarklet to autofill a website.
 
 ## For Users
 ### Set up a bookmarklet
-1. Open https://kosukemori.github.io/k-autofill/.  
-2. From the page, drag and drop one of links to your bookmarks bar.  
+1. Open https://kosukemori.github.io/k-autofill/.
+2. From the page, drag and drop one of links to your bookmarks bar.
 
 ### How to use
 #### Autofill
-1. **Open a current timesheet page**  
-2. Click the bookmark, and wait until a popup is appeared.  
+1. **Open a current timesheet page**
+2. Click the bookmark, and wait until a popup is appeared.
 
 #### Jump to a current timesheet
-1. Login.  
-2. Click the bookmark.  
+1. Login.
+2. Click the bookmark.
 
 ### Caution
-This bookmarklet is created for private.  
-I am not responsible for any loss, damages, troubles when you use this bookmarklet.  
+This bookmarklet is created for private.
+
+I am not responsible for any loss, damages, troubles when you use this bookmarklet.
 
 ### Others
-- **Please update your browser for latest version**.  
-- Columns are setted as '9:00-12:00', '13:00-18:00, 'Regular'.  
+- **Please update your browser for latest version**.
+- Columns are setted as '9:00-12:00', '13:00-18:00, 'Regular'.
 - This bookmarklert don't deal with overtime and PTO.
-- Please forget about Internet Explorer.  
-
-<br />
-<br />
-<br />
+- Please forget about Internet Explorer.
 
 ## Contributing
 ### Set up a develop-environment (Mac)
@@ -44,10 +41,10 @@ cd k-autofill
 npm install
 ```
 ### Edit and build
-Edit `src/*.js`  
-(main.js: Autofill, current-timesheet.js: Jump to a current timesheet)  
-Build: `npm run build`  
-(index.html is automatically generated, so please check it as like as https://'username'.github.io/k-autofill/)  
+Edit `src/*.js` (main.js: Autofill, current-timesheet.js: Jump to a current timesheet)
+
+Build: `npm run build` (index.html is automatically generated, so please check it as like as https://'username'.github.io/k-autofill/)
+
 ### Others
 npm: 3.10.8  
 node: v6.9.1  
