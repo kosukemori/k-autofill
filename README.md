@@ -17,16 +17,15 @@ Bookmarklet to autofill a website.
 1. Login.
 2. Click the bookmark.
 
-### Caution
-This bookmarklet is created for private.
-
-I am not responsible for any loss, damages, troubles when you use this bookmarklet.
-
 ### Others
 - **Please update your browser for latest version**.
 - Columns are setted as '9:00-12:00', '13:00-18:00, 'Regular'.
 - This bookmarklert don't deal with overtime and PTO.
 - Please forget about Internet Explorer.
+
+## Caution
+This bookmarklet is created for private.
+**I am not responsible for any loss, damages, troubles when you use this bookmarklet.**
 
 ## Contributing
 ### Set up a develop-environment (Mac)
@@ -40,15 +39,16 @@ Fork, clone and checkout your repo
 cd k-autofill
 npm install
 ```
+
 ### Edit and build
 Edit `src/*.js` (main.js: Autofill, current-timesheet.js: Jump to a current timesheet)
 
 Build: `npm run build` (index.html is automatically generated, so please check it as like as https://'username'.github.io/k-autofill/)
 
 ### Others
-npm: 3.10.8  
-node: v6.9.1  
-Clean command: `npm run clean`  
-Check Code command: `npm run lint`  
-Watch command: `npm run watch`  
-You can use async and await because babel translate it to ES6 code.  
+- npm: 3.10.8
+- node: v6.9.1
+- Clean command: `npm run clean`
+- Check Code command: `npm run lint`
+- Watch command: `npm run watch`
+- You can use async and await because babel translate it to ES6 code.
