@@ -18,7 +18,7 @@ Bookmarklet to autofill a website.
 2. Click the bookmark.
 
 ## Caution
-This bookmarklet is created for private.
+This bookmarklet is MIT license.
 **I am not responsible for any loss, damages, troubles when you use this bookmarklet.**
 
 ### Others
